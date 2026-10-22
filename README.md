@@ -66,5 +66,13 @@ These figures are reported at different stages of the project and should be inte
 
 **Note:** The dataset may need to be downloaded separately. Refer to the original dataset source identified in the project materials.
 
+## Project Visualisation
+
+The chart below highlights one of the visual insights from the Amazon Kindle Store review sentiment analysis.
+
+![Sentiment Analysis Chart](sentiment_distribution.png)
+
 ## Project Background
 This project was completed in January 2023. When reusing or adapting code or data from external sources, please acknowledge the relevant original sources.
+
+
