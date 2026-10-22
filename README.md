@@ -1,89 +1,53 @@
 # Amazon Kindle Store Review Sentiment Analysis
 
 ## Project Overview
-This project explores customer reviews from the Amazon Kindle Store using Python, natural language processing (NLP), and machine learning. The aim is to classify reviews as positive or negative based on their ratings and text.
-
-## Business Problem
-Customer reviews provide valuable information about customer satisfaction. Analysing large volumes of reviews can help identify positive experiences, negative feedback, and potential areas for improvement.
-
-## Objectives
-- Clean and prepare review text for analysis.
-- Explore customer review ratings and sentiment.
-- Convert text into numerical features using CountVectorizer and TF-IDF.
-- Train and evaluate machine learning models for sentiment classification.
-- Compare model performance using appropriate evaluation metrics.
+In this project, I use Python, Natural Language Processing (NLP), and machine learning to analyze Amazon Kindle Store customer reviews and classify sentiment as positive or negative based on customer ratings. The goal is to explore customer opinions, identify sentiment patterns and evaluate how effectively machine learning models can classify reviews.
 
 ## Dataset
-The project report describes a dataset of approximately 982,619 Amazon Kindle Store reviews from 2000 to 2014.
+The dataset contains approximately 982,619 Amazon Kindle Store reviews, covering the period from 2000 to 2014, according to the original project report.
 
-Sentiment labels were created from review ratings:
-- **Positive:** ratings of 3–5
-- **Negative:** ratings of 1–2
+**Dataset sources:**
+- [UCSD Amazon Product Data](https://cseweb.ucsd.edu/~jmcauley/datasets/amazon/links.html)
+- [Kaggle – Amazon Kindle Reviews](https://www.kaggle.com/code/akashbangalkar3/amazon-kindle-reviews-acc-score-93/data)
+- [Related GitHub Project](https://github.com/dillon-quan/Amazon-Kindle-Reviews---Sentiment-Analysis)
 
-The dataset is referenced in the original project report. Please see the report or notebook for the original source and data details.
+Sentiment labels:
+- Ratings of 3–5: Positive
+- Ratings of 1–2: Negative
 
 ## Tools and Technologies
-- Python
+- Python, Pandas and NumPy
+- Scikit-learn and NLTK
+- Matplotlib and Seaborn
 - Jupyter Notebook
-- Pandas and NumPy
-- Natural Language Processing (NLP)
-- Scikit-learn
-- CountVectorizer and TF-IDF
-- Matplotlib and Seaborn, where used in the notebook
 
 ## Methodology
-1. Load and explore the review dataset.
-2. Clean the review text, including lowercasing and removing punctuation and stop words.
-3. Apply text preprocessing and lemmatisation.
-4. Convert review text into numerical features.
-5. Train machine learning models, including Naive Bayes, Logistic Regression, Support Vector Classifier, and Random Forest, as implemented in the notebook.
-6. Evaluate model performance using metrics such as accuracy, precision, and ROC-AUC, where available.
+1. Data exploration and cleaning
+2. Text preprocessing
+3. Text vectorisation using CountVectorizer and TF-IDF
+4. Machine learning model training
+5. Model evaluation
 
 ## Results
-The original report records an initial Naive Bayes accuracy of approximately 91% and a tuned test accuracy of approximately 87%.
 
-These figures are reported at different stages of the project and should be interpreted in the context of the evaluation method and class imbalance. Please consult the notebook for the corresponding model outputs.
+The original report records approximately **91% accuracy** for the initial Multinomial Naive Bayes model and **87%** for the tuned model on test data. These results have not been independently reproduced.
 
-## Limitations
-- The dataset contains substantially more positive reviews than negative reviews, which may affect model performance.
-- Accuracy alone may not fully reflect how well the model identifies negative reviews.
-- Results depend on the dataset, preprocessing decisions, and model configuration.
+### Customer Rating Distribution
 
-## Future Improvements
-- Evaluate models using precision, recall, F1-score, and confusion matrices.
-- Investigate methods for handling class imbalance.
-- Compare additional NLP techniques and model configurations.
-- Improve reproducibility by documenting the environment and dependencies.
+![Customer Rating Distribution](sentiment_distribution.png)
 
-## Repository Contents
-- `sentiment_analysis.ipynb` — Python notebook containing the project analysis.
+This chart visualises the distribution of customer ratings in the dataset. It helps show how customer feedback is distributed across rating levels.
 
-## How to Run
-1. Download or clone this repository.
-2. Install the required Python libraries.
-3. Open the notebook using Jupyter Notebook or JupyterLab.
-4. Run the notebook cells in order.
+### ROC Curve
 
-**Note:** The dataset may need to be downloaded separately. Refer to the original dataset source identified in the project materials.
+![ROC Curve](images/roc_curve.png)
 
-## Project Visualisation
+The ROC curve illustrates the model's ability to distinguish between positive and negative reviews at different classification thresholds. A curve closer to the top-left corner generally indicates better classification performance.
 
-The chart below highlights one of the visual insights from the Amazon Kindle Store review sentiment analysis.
-
-![Sentiment Analysis Chart](sentiment_distribution.png)
-
-## Project Background
-This project was completed in January 2023. When reusing or adapting code or data from external sources, please acknowledge the relevant original sources.
-
-## Project Documentation
-
-You can explore the project documentation below:
-
-- [Project Report (PDF)](reports/project_report.pdf)
-- [Project Presentation (PDF)](reports/project_presentation.pdf)
+## Project Files
+- [Jupyter Notebook](sentiment_analysis.ipynb)
+- [Project Report](reports/project_report.pdf)
+- [Project Presentation](reports/project_presentation.pdf)
 
 ## Author
-
-Created as a data science project exploring sentiment analysis, natural language processing, and machine learning using Python.
-
-
+**Olasunkanmi David Adisa**
