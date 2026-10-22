@@ -75,4 +75,15 @@ The chart below highlights one of the visual insights from the Amazon Kindle Sto
 ## Project Background
 This project was completed in January 2023. When reusing or adapting code or data from external sources, please acknowledge the relevant original sources.
 
+## Project Documentation
+
+You can explore the project documentation below:
+
+- [Project Report (PDF)](reports/project_report.pdf)
+- [Project Presentation (PDF)](reports/project_presentation.pdf)
+
+## Author
+
+Created as a data science project exploring sentiment analysis, natural language processing, and machine learning using Python.
+
 
