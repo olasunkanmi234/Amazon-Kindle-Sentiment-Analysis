@@ -40,7 +40,7 @@ This chart visualises the distribution of customer ratings in the dataset. It he
 
 ### ROC Curve
 
-![ROC Curve](images/roc_curve.png)
+![Customer Rating Distribution](sentiment_distribution2.png)
 
 The ROC curve illustrates the model's ability to distinguish between positive and negative reviews at different classification thresholds. A curve closer to the top-left corner generally indicates better classification performance.
 
