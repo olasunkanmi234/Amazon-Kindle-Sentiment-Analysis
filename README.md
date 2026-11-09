@@ -50,4 +50,4 @@ The ROC curve illustrates the model's ability to distinguish between positive an
 - [Project Presentation](reports/project_presentation.pdf)
 
 ## Author
-**Olasunkanmi David Adisa**
+**Olasunkanmi Adisa**
